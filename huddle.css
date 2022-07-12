@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:ital@1&family=Poppins:wght@300;400&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.partt {
+    display: flex;
+}
+
+
+.container {
+    background: url(./huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    background: linear-gradient(purple);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'poppins', sans-serif;
+    
+}
+
+.sec {
+    position:relative;
+    top: 20vh;
+    margin: .5rem 5rem 0 5rem;
+    padding: 1rem;
+    color: white;
+    height: 20rem;
+    width: 35rem;
+}
+
+.pic {
+    position:relative;
+    top: 10rem;
+    margin-left: 10rem;
+    z-index: 20;
+}
+
+.sec h2{
+    font-size: 2.8rem;
+    line-height: 4rem;
+    font-weight: 600;
+    z-index: 10;
+    margin-bottom: 1rem;
+}
+
+.sec p {
+    font-size: 1.1rem;
+    color:blanchedalmond;
+    line-height: 2rem;
+    height: 15vh;
+    width: 600px;
+}
+
+.hud {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    top: 10px;
+    left: 150px;
+}
+
+
+.fa-comment-dots{
+    margin-right: 10px;
+}
+
+button {
+    color: lightslategray;
+    padding: 2rem;
+    width: 13rem;
+    margin-bottom: 2rem;
+    position: absolute;
+    font-weight: 500;
+    border: 2px solid transparent;
+    font-size: 1.3rem;
+    height: 3rem;
+    box-shadow: 0 0 5px black;
+    background: transparent;
+    border-radius: 2.5rem;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: 4s;
+    
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+ .icons {
+     position: absolute;
+     right: 5%;
+     bottom: 5%;
+     display: flex;
+ }
+ 
+.icons .fa-brands {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border: 1px solid white;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+.icons .fa-twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons .fa-facebook-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons .fa-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+
+
+ @media (max-width: 500px) {
+       .container {
+        background: url(./huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        border: 1px solid red;
+    
+    }
+
+    .hud {
+        position: absolute;
+        font-size: 15px;
+        left: 10px;
+        top: 5px;
+    }
+
+    .partt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block{
+        max-width: 500px;
+    }
+
+    .block p{
+        word-break: break-all;
+        padding-right: 1rem;
+    }
+
+    .pic {
+        position: relative;
+        padding: 0px 10px;
+        z-index: 1;
+        height: 200px;
+        width: 210px;
+        right: 150px;
+        
+    }
+
+    .sec h2{
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .sec {
+        position: relative;
+        /* text-align: center; */
+    }
+
+
+}
